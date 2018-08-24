@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">SensorActyx</string>
+    <string name="text_device_identifier">Device identifier (NNN): %s</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_btn_next">Next</string>
+    <string name="text_gyroscope">Gyroscope</string>
+    <string name="text_accelerometer">Accelerometer</string>
+    <string name="text_gravity">Gravity</string>
+    <string name="text_rotation">Rotation</string>
+    <string name="text_light">Light</string>
+    <string name="text_accelerometer_sensor_value">Accelerometer: %.8f</string>
+    <string name="text_gyroscope_sensor_value">Gyroscope: %.8f</string>
+    <string name="text_gravity_sensor_value">Gravity: %.8f</string>
+    <string name="text_rotation_sensor_value">Rotation: %.8f</string>
+    <string name="text_light_sensor_value">Light: %.8f</string>
+    <string name="text_accelerometr_is_not_available">Accelerometr is not available</string>
+    <string name="text_gyroscope_is_not_available">Gyroscope is not available</string>
+    <string name="text_gravity_is_not_available">Gravity sensor is not available</string>
+    <string name="text_rotation_is_not_available">Rotation sensor is not available</string>
+    <string name="text_light_is_not_available">Light sensor is not available</string>
+    <string name="text_choose_one_sensor">Please choose at least one sensor</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="do_you_want_close_wsc">Do you want to close Websocket connection?</string>
+    <string name="ws_need_to_be_closed">Connection needs to be closed</string>
+
+</resources>

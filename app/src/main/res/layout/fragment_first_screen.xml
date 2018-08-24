@@ -1,0 +1,75 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="myosolutions.pl.sensoractyx.workflow.firstscreen.FirstScreenFragment">
+
+    <data>
+
+        <import type="android.view.View.OnClickListener" />
+
+        <variable
+            name="clickListener"
+            type="OnClickListener" />
+    </data>
+
+
+    <RelativeLayout
+        android:id="@+id/first_screen_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+
+        <TextView
+            android:id="@+id/tv_device_identifier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/device_identifier_dimen"
+            android:text="@string/text_device_identifier" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/sensors_pick_up_area_margin"
+            android:layout_below="@id/tv_device_identifier"
+            android:orientation="vertical"
+            android:layout_above="@+id/btn_next">
+
+            <include
+                android:id="@+id/accelerometr_layout"
+                layout="@layout/accelerometer_layout"/>
+
+            <include
+                android:id="@+id/gyroscope_layout"
+                layout="@layout/gyroscope_layout"/>
+
+            <include
+                android:id="@+id/gravity_layout"
+                layout="@layout/gravity_layout"/>
+
+            <include
+                android:id="@+id/rotation_layout"
+                layout="@layout/rotation_layout"/>
+
+            <include
+                android:id="@+id/light_layout"
+                layout="@layout/light_layout"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/text_btn_next"
+            android:onClick="@{clickListener.onClick}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</layout>

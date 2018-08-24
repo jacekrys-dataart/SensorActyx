@@ -1,0 +1,103 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="myosolutions.pl.sensoractyx.workflow.firstscreen.FirstScreenFragment">
+
+
+    <LinearLayout
+        android:id="@+id/ll_main_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_monitor"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_monitor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/monitor_margin"
+                android:background="@android:color/white"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_preview"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/lower_part_second_screen_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_device_identifier"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/device_identifier_dimen"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/second_screen_device_identifier_bottom_margin"
+                android:layout_height="wrap_content"
+                android:text="@string/text_device_identifier"/>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/ll_preview_sensors_area"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textSize="@dimen/text_sensor_name"
+                    android:id="@+id/tv_preview_sensor_accelerometr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_accelerometer_sensor_value"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:textSize="@dimen/text_sensor_name"
+                    android:id="@+id/tv_preview_sensor_gyroscope"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_gyroscope_sensor_value"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:textSize="@dimen/text_sensor_name"
+                    android:id="@+id/tv_preview_sensor_gravity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_gravity_sensor_value"
+                    android:visibility="gone"/>
+
+
+                <TextView
+                    android:textSize="@dimen/text_sensor_name"
+                    android:id="@+id/tv_preview_sensor_rotation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_rotation_sensor_value"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:textSize="@dimen/text_sensor_name"
+                    android:id="@+id/tv_preview_sensor_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_light_sensor_value"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
